@@ -86,9 +86,9 @@ public class Grid : MonoBehaviour
 		{
 			if (path != null)
 			{
-				foreach (Node n in grid)
+				foreach (Node n in path)
 				{
-					Gizmos.color = Color.black;
+					Gizmos.color = Color.cyan;
 					Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - 0.1f));
 				}
 			}
@@ -105,12 +105,12 @@ public class Grid : MonoBehaviour
 
 					if (path != null && path.Contains(n))
 					{
-						Gizmos.color = Color.black;
+						Gizmos.color = Color.cyan;
 					}
 
 					if (playerNode == n)
 					{
-						Gizmos.color = Color.cyan;
+						Gizmos.color = Color.magenta;
 					}
 
 					Gizmos.DrawCube(n.worldPosition, Vector3.one * (nodeDiameter - 0.1f));
