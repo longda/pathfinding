@@ -2,4 +2,4 @@
 
 # Pathfinding Algorithms
 
-## Unity 3D example
+## The A Star Algorithm
